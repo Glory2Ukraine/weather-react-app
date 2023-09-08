@@ -1,7 +1,15 @@
+:root {
+  --background-color: #fcf6f6;
+  --btn-color: #2baf66;
+  --btn-hover-color: #2baf66;
+}
+
 .Weather {
   border: 1px solid #dadde1;
   padding: 16px;
-  border-radius: 4px;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(135, 135, 135);
 }
@@ -10,12 +18,27 @@
   margin-bottom: 20px;
 }
 
+.Weather form .form-control {
+  border: none;
+}
+
+.Weather form .btn-primary {
+  border: none;
+  background-color: var(--btn-color);
+}
+
+form .btn:hover {
+  background-color: var(--btn-hover-color);
+}
+
 .Weather h1 {
   display: block;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: 100;
   margin: 20px 0 0 0;
+  margin-bottom: 10px;
   line-height: 29px;
+  color: black;
 }
 
 .Weather ul {
@@ -26,7 +49,7 @@
 .Weather li {
   font-size: 16px;
   font-weight: 100px;
-  line-height: 19px;
+  line-height: 22px;
   list-style: none;
 }
 
@@ -53,4 +76,9 @@
   font-weight: 400;
   position: relative;
   line-height: 1;
+}
+
+.Weather .unit a {
+  color: var(--btn-color);
+  text-decoration: none;
 }
