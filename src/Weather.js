@@ -62,6 +62,24 @@ export default function Weather(props) {
         </form>
         <WeatherInfo data={weatherData} />
         <WeatherForecast coordinates={weatherData.coordinates} />
+        <footer>
+          This project was coded by Yulia Vorobiova and is{" "}
+          <a
+            href="https://github.com/Glory2Ukraine/weather-react-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            open-sourced on GitHub
+          </a>{" "}
+          and{" "}
+          <a
+            href="https://react-weather-app-by-jv.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hosted on Netlify
+          </a>
+        </footer>
       </div>
     );
   } else {

@@ -1,7 +1,7 @@
 :root {
-  --background-color: #fcf6f6;
-  --btn-color: #2baf66;
-  --btn-hover-color: #2baf66;
+  --background-color: #f5ebeb;
+  --btn-color: #2bae66;
+  --btn-hover-color: #2bae66;
 }
 
 .Weather {
@@ -15,11 +15,12 @@
 }
 
 .Weather form {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .Weather form .form-control {
   border: none;
+  border: 1px solid #2bae66;
 }
 
 .Weather form .btn-primary {
@@ -33,10 +34,10 @@ form .btn:hover {
 
 .Weather h1 {
   display: block;
-  font-size: 28px;
+  font-size: 32px;
   font-weight: 100;
   margin: 20px 0 0 0;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   line-height: 29px;
   color: black;
 }
@@ -51,6 +52,14 @@ form .btn:hover {
   font-weight: 100px;
   line-height: 22px;
   list-style: none;
+}
+
+.Weather li .humidity {
+  color: var(--btn-color);
+}
+
+.Weather li .speed {
+  color: var(--btn-color);
 }
 
 .Weather canvas {
@@ -79,6 +88,23 @@ form .btn:hover {
 }
 
 .Weather .unit a {
-  color: var(--btn-color);
   text-decoration: none;
+  color: rgb(33, 33, 33);
+  opacity: 0.6;
+}
+
+.Weather .WeatherForecast-day {
+  color: black;
+}
+
+.Weather .WeatherForecast-temperatures {
+  color: var(--btn-color);
+}
+
+.Weather footer {
+  font-size: 12px;
+  margin-top: 40px;
+  line-height: 18px;
+  text-align: center;
+  color: rgba(39, 33, 66, 0.4);
 }
