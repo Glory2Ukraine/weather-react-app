@@ -1,17 +1,20 @@
 :root {
   --background-color: #f5ebeb;
-  --btn-color: #2bae66;
-  --btn-hover-color: #2bae66;
+  --btn-color: white;
+  --btn-hover-color: rgb(91, 13, 62);
 }
 
 .Weather {
   border: 1px solid #dadde1;
   padding: 16px;
-  background-color: var(--background-color);
+  background-image: linear-gradient(
+    to right,
+    rgba(153, 194, 233, 0),
+    rgb(91, 13, 62)
+  );
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(135, 135, 135);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
 }
 
 .Weather form {
@@ -19,13 +22,12 @@
 }
 
 .Weather form .form-control {
-  border: none;
-  border: 1px solid #2bae66;
+  border: 1px solid rgb(91, 13, 62);
 }
 
 .Weather form .btn-primary {
-  border: none;
-  background-color: var(--btn-color);
+  border: 1px solid rgb(91, 13, 62);
+  background-color: rgb(206, 165, 191);
 }
 
 form .btn:hover {
@@ -34,12 +36,13 @@ form .btn:hover {
 
 .Weather h1 {
   display: block;
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 100;
   margin: 20px 0 0 0;
   margin-bottom: 15px;
   line-height: 29px;
-  color: black;
+  color: rgb(105, 18, 73);
+  text-shadow: 2px 2px white;
 }
 
 .Weather ul {
@@ -48,18 +51,25 @@ form .btn:hover {
 }
 
 .Weather li {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 100px;
   line-height: 22px;
   list-style: none;
 }
 
 .Weather li .humidity {
-  color: var(--btn-color);
+  color: white;
+  text-shadow: 2px 2px rgb(18, 35, 56);
 }
 
 .Weather li .speed {
-  color: var(--btn-color);
+  color: white;
+  text-shadow: 2px 2px rgb(18, 35, 56);
+}
+
+.weather-conditions {
+  color: white;
+  text-shadow: 2px 2px rgb(18, 35, 56);
 }
 
 .Weather canvas {
@@ -71,7 +81,8 @@ form .btn:hover {
 
 .Weather .temperature {
   font-weight: bold;
-  color: rgb(33, 33, 33);
+  color: white;
+  text-shadow: 2px 2px rgb(18, 35, 56);
   font-size: 64px;
   line-height: 64px;
   font-weight: 400;
@@ -80,7 +91,7 @@ form .btn:hover {
 }
 
 .Weather .unit {
-  color: rgb(33, 33, 33);
+  color: rgb(91, 13, 62);
   font-size: 16px;
   font-weight: 400;
   position: relative;
@@ -89,16 +100,26 @@ form .btn:hover {
 
 .Weather .unit a {
   text-decoration: none;
-  color: rgb(33, 33, 33);
+  color: rgb(91, 13, 62);
   opacity: 0.6;
 }
 
+.Weather .box-item {
+  border-radius: 12px;
+  padding: 15px;
+  background-color: rgb(206, 165, 191);
+  border: white;
+  box-shadow: 2px 2px rgb(105, 18, 73);
+}
+
 .Weather .WeatherForecast-day {
-  color: black;
+  color: white;
+  text-shadow: 2px 2px rgb(18, 35, 56);
 }
 
 .Weather .WeatherForecast-temperatures {
-  color: var(--btn-color);
+  color: white;
+  text-shadow: 2px 2px rgb(18, 35, 56);
 }
 
 .Weather footer {
