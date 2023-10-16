@@ -28,10 +28,12 @@
 .Weather form .btn-primary {
   border: 1px solid rgb(91, 13, 62);
   background-color: rgb(206, 165, 191);
+  color: rgb(105, 18, 73);
 }
 
 form .btn:hover {
   background-color: var(--btn-hover-color);
+  color: white;
 }
 
 .Weather h1 {
@@ -57,17 +59,12 @@ form .btn:hover {
   list-style: none;
 }
 
-.Weather li .humidity {
-  color: white;
-  text-shadow: 2px 2px rgb(18, 35, 56);
+.Weather .day-and-description {
+  color: rgb(105, 18, 73);
+  font-weight: 400;
 }
 
-.Weather li .speed {
-  color: white;
-  text-shadow: 2px 2px rgb(18, 35, 56);
-}
-
-.weather-conditions {
+.Weather .weather-conditions {
   color: white;
   text-shadow: 2px 2px rgb(18, 35, 56);
 }
@@ -93,7 +90,7 @@ form .btn:hover {
 .Weather .unit {
   color: rgb(91, 13, 62);
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
   position: relative;
   line-height: 1;
 }
@@ -115,11 +112,13 @@ form .btn:hover {
 .Weather .WeatherForecast-day {
   color: white;
   text-shadow: 2px 2px rgb(18, 35, 56);
+  font-size: 18px;
 }
 
 .Weather .WeatherForecast-temperatures {
   color: white;
   text-shadow: 2px 2px rgb(18, 35, 56);
+  font-size: 16px;
 }
 
 .Weather footer {
@@ -127,5 +126,9 @@ form .btn:hover {
   margin-top: 40px;
   line-height: 18px;
   text-align: center;
-  color: rgba(39, 33, 66, 0.4);
+  color: rgb(91, 13, 62);
+}
+
+.Weather footer a {
+  color: white;
 }
